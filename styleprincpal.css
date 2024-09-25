@@ -1,0 +1,29 @@
+*{
+padding: 0%;
+margin: 0%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.menu-lateral{
+    background-color: aqua;
+    width: 15%;
+    height: 100%;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.menu-lateral ul li{
+    list-style: none;
+   
+}
+.menu-contenido{
+    background-color: brown;
+    height: 100%;
+    width: 100%;
+}
+
+.ic1{
+    float: right; 
+}

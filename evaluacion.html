@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-evaluacion.css">
+</head>
+
+<body>
+    <header>
+        <div class="head-cab1">
+            <!-- Logo -->
+            <section class="log-1">
+                <img src="" alt="datos">
+            </section>
+            <!-- Demas Datos -->
+            <section class="seccion-1">
+                <h4>Bienvenidos Sres del Comite de Calidad del programa: Derecho 5 Universidad Nacional Altiplano Puno
+                    </h3>
+            </section>
+            <!-- Cerrar Cuenta -->
+            <section class="cuenta">
+                <h4>Salir</h4>
+            </section>
+        </div>
+        <div class="head-cab1">
+           
+        </div>
+    </header>
+    <main>
+        <div class="card">
+        <h2 style="padding-left: 20px; padding-top: 20px;">Nueva Autoevaluacion</h2>
+        <div class="container">
+            <div class="container">
+                <button class="button" disabled>Seleccionar Evento</button>
+                <button class="button" disabled>Matriz de Calidad</button>
+                <button class="button">Configurar Autoevaluacion</button>
+                
+              </div>
+              <button class="next-button" style="float: right; padding: 5px; background: rgb(61, 61, 190); margin-top: 120px;">Siguiente</button>
+        </div>
+        <h4 style="margin-left: 440px;">Evento</h4>
+        <select id="tip">
+            <option value="">Seleccione</option>
+            <option value="autoevaluacion">AUTOEVALUACION</option>
+          </select>
+          
+        </div>
+       
+    </main>
+
+</body>
+
+</html>
+<script>
+    const buttons = document.querySelectorAll('.button');
+const nextButton = document.querySelector('.next-button');
+let currentButtonIndex = 2; // Comenzamos con el tercer botón desbloqueado
+
+nextButton.addEventListener('click', () => {
+  buttons[currentButtonIndex].disabled = true;
+  currentButtonIndex = (currentButtonIndex + 1) % buttons.length;
+  buttons[currentButtonIndex].disabled = false;
+});
+
+</script>
